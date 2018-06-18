@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
+    <button ion-button menuToggle left>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
     <ion-title>
       Estatísticas
     </ion-title>
-  </ion-navbar>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="sair()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>

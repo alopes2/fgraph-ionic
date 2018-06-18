@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { MetaPage } from '../pages/meta/meta';
 
 const config = {
   apiKey: "AIzaSyCXw4CPgW_uR1SQHr72fYkLS329CExNCUk",
@@ -22,7 +23,8 @@ const config = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MetaPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ const config = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MetaPage
   ],
   providers: [
     StatusBar,
